@@ -56,9 +56,9 @@ export async function  tambahPenjual(nama, alamat, gmail, noTlpn) {
       gmail: gmail,
       noTlpn: noTlpn
     });
-    console.log('Berhasil menambah produk ' + dokRef.id);
+    console.log('Berhasil menambah penjual' + dokRef.id);
   } catch (e) {
-    console.log('Gagal menambah produk' + e);
+    console.log('Gagal menambah penjual' + e);
   }
    }
    
@@ -66,7 +66,7 @@ export async function  tambahPenjual(nama, alamat, gmail, noTlpn) {
   await deleteDoc(doc(db, "penjual", docId));
 }
 
-export async function ubahPembeli(docId, nama, alamat, gmail, noTlpn) {
+export async function ubahPenjual(docId, nama, alamat, gmail, noTlpn) {
   await updateDoc(doc(db, "penjual", docId), {
     nama: nama,
     alamat: alamat,

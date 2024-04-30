@@ -14,7 +14,7 @@
 <body>
   <h1>Daftar penjual</h1>
 
-  <table class="table" id="daftar-pembeli">
+  <table class="table" id="daftar-penjual">
     <thead>
       <tr>
         <th scope="col">#</th>
@@ -31,14 +31,14 @@
 
   <img src="loader.gif" style="width: 15em; display: block" id="loader">
 
-  <a href=" form data siswa.html">Tambah data penjual</a>
+  <a href=" form data penjual.html">Tambah data penjual</a>
 
   <script type="module">
-    import { ambilDaftarPembeli, formatAngka, hapusPembeli } from './main.js';
+    import { ambilDaftarPenjual, formatAngka, hapusPenjual } from './main.js';
 
     $(document).ready(async function() {
-      let elemenDaftar = $("#daftar-pembeli > tbody");
-      let daftarPembeli = await ambilDaftarPembeli();
+      let elemenDaftar = $("#daftar-penjual > tbody");
+      let daftarPenjual = await ambilDaftarPenjual();
       let nomor = 1;
 
       daftarPenjual.forEach((data) => {
