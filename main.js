@@ -56,9 +56,9 @@ export async function  tambahPenjual(nama, alamat, gmail, noTlpn) {
       gmail: gmail,
       noTlpn: noTlpn
     });
-    console.log('Berhasil menambah penjual' + dokRef.id);
+    console.log('Berhasil menambah produk' + dokRef.id);
   } catch (e) {
-    console.log('Gagal menambah penjual' + e);
+    console.log('Gagal menambah produk' + e);
   }
    }
    
